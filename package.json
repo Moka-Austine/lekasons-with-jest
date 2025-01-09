@@ -1,0 +1,11 @@
+{
+  "name": "lekasons-closet",
+  "version": "1.0.0",
+  "description": "A small app for shoping online",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "moka austine",
+  "license": "ISC"
+}
