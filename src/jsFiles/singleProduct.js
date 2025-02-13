@@ -23,7 +23,7 @@ cardIMG.onclick(() => {
 });
 
 
-function singleProducts() {
+export function singleProducts() {
 
     smallImage[0].addEventListener("click", () => {
         bigImage.src = smallImage[0].src;
@@ -39,3 +39,7 @@ function singleProducts() {
     });
 }; 
 singleProducts();
+
+export function sum(a, b) {
+    return a + b;
+}

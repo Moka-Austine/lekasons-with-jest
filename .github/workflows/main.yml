@@ -29,6 +29,9 @@ jobs:
       needs: Just-echo-2 # This makes Just-echo-3 depend on Just-echo-2
       runs-on: ubuntu-latest
       steps:
-        - name: First action 3
-          run: |
-            echo "first action 3"
+          - uses: actions/checkout@v4
+          - uses: actions/setup-node@v4
+            with:
+              node-version: 22.13.0
+          - name: First action 3
+            run: npm test
