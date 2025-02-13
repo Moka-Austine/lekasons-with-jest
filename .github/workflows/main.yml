@@ -2,6 +2,7 @@ name: CI workflow
 
 
 on: 
+  workflow_dispatch:
   push:
     branches:
       - main
@@ -34,9 +35,10 @@ jobs:
             with:
               node-version: 10
           - name: First action 3
-<<<<<<< HEAD
-            run: npm init
-=======
-            run: npm test
-              
->>>>>>> 80b81ede6183843354d2fa12be86cdbca3c89468
+            run: |
+              npm install
+              npm run test
+
+            
+
+
