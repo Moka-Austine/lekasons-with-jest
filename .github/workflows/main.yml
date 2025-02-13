@@ -32,6 +32,11 @@ jobs:
           - uses: actions/checkout@v4
           - uses: actions/setup-node@v4
             with:
-              node-version: 22.13.0
+              node-version: 10
           - name: First action 3
+<<<<<<< HEAD
             run: npm init
+=======
+            run: npm test
+              
+>>>>>>> 80b81ede6183843354d2fa12be86cdbca3c89468
