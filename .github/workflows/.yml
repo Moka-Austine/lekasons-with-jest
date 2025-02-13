@@ -18,7 +18,7 @@ jobs:
           echo "first action 1" 
 
   Just-echo-2:
-      needs: Just-echo  #  This makes Just-echo-2 depend on Just-echo
+      needs: Just-echo-1  #  This makes Just-echo-2 depend on Just-echo
       runs-on: ubuntu-latest
       steps:
         - name: First action 2
